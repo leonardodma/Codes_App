@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Projeto</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+  <script src="assets/js/codes.js"></script>
+  <script src="assets/js/projeto.js"></script>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width:width-device, initial-scale=1">
+</head>
+
+<body class="body">
+  <header class="header">
+   <a href="index.html"><img width="80" height="80" src="./assets/img/logo.png" alt="Ícone de Portfólio"></a>
+   <div class="titulo-mobile">
+    <h1>{{titulo}}</h1>
+  </div>
+  <ul class="nav">
+   {{#each portfolio}}
+   <li class="nav-item"><a class="link" href="categoria.html?key={{@key}}">{{this.categoria}}</a></li>
+   {{/each}}
+ </ul>
+</header>
+
+
+<h1 class="centralizadortitulo">{{titulo}}</h1>
+<nav class='blocktext2'>
+ <img class="img-blockpro" src="./assets/img/{{imagem}}" alt="Projeto de {{titulo}}">
+ <div class="blocktext2-2">
+   <p class="paragraph2">Descrição:{{descricao}}</p>
+
+   <p class="paragraph3">Equipe:</p>
+   <ul class="paragraph4">
+     <li>{{equipe}}</li>
+   </ul>
+
+   <p class="paragraph5">Materiais:</p>
+   <ul class="paragraph6">
+     <li>{{materiais}}</li>
+   </ul>
+
+   <p class="paragraph7">Salas:</p>
+   <ul class="paragraph8">
+    <li>{{salas}}</li>
+  </ul>
+</div>
+</nav>
+
+
+</body>
+</html>
