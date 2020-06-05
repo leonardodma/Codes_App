@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="pt-br">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <title>Index</title>
+  <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+  <script src="assets/js/codes.js"></script>
+  <script src="assets/js/index.js"></script>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width:width-device, initial-scale=1">
 </head>
+<body class="body">
+  <header class="header">
+   <a href="index.html"><img width="80" height="80" src="./assets/img/logo.png" alt="Ícone de Portfólio"></a>
+   <div class="titulo-mobile">
+    <h1>Portfólio de projetos Engenharia Insper</h1>
+  </div>
+  <ul class="nav">
+    {{#each portfolio}}
+    <li class="nav-item"><a class="link" href="categoria.html?key={{@key}}">{{this.categoria}}</a></li>
+    {{/each}}
+  </ul>  
+  </header>
 
-<body>
+<main>
+ <h1 class="centralizadortitulo">Portfólio de Projetos - Engenharia Insper</h1>
+ <img width="400" height="500" class="displayed" src="./assets/img/foto_estudante.jpg" alt="Foto de Perfil">
+ <h2 class="centralizadorlegenda">Lucas Andrade</h2>
+ <h2 class="centralizadorlegenda">Engenharia Mecânica</h2>
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
+ <h2 class="centralizadortitulo">Projetos:</h2>
+ <nav class="blocktext" >
+  {{#each portfolio}}
+  <a href="categoria.html?key={{@key}}"><img width="400" height="300" class='img-block1' src="./assets/img/{{this.imagem}}" alt="Ícone de {{this.categoria}}"></a>
+  {{/each}}
+  
+</nav>
+</main>
 </body>
 </html>

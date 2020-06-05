@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Categoria</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+  <script src="assets/js/codes.js"></script>
+  <script src="assets/js/categoria.js"></script>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width:width-device, initial-scale=1">
+</head>
+
+<body class="body">
+  <header class="header">
+   <a href="index.html"><img width="80" height="80" src="./assets/img/logo.png" alt="Ícone de Portfólio"></a>
+   <div class="titulo-mobile">
+    <h1>Projetos de {{categoria}}</h1>
+  </div>
+  <ul class="nav">
+    {{#each portfolio}}
+    <li class="nav-item"><a class="link" href="categoria.html?key={{@key}}">{{this.categoria}}</a></li>
+    {{/each}}
+  </ul>  
+  </header>
+
+
+<h1 class="centralizadortitulo">Projetos de {{categoria}}</h1>
+
+<nav class="blocktext2">
+  <div class='blocktext2-2'>
+    <ul class="nav2">
+    {{#each projetos}}
+    <li class=nav-item2><a class="title" href="portfolio.html?key={{@key}}">{{this.titulo}}</a></li>
+    {{/each}}
+  </ul> 
+    
+  </div>
+</nav>
+</body>
+</html>

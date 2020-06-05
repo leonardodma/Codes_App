@@ -1,0 +1,386 @@
+.header {
+	border-style: solid;
+	margin: auto;
+	padding: 0.7rem;
+	background-color: #111820;
+	font-family: 'PT Mono', monospace;
+	font-size: 1rem;
+	font-weight: bold;
+	min-width: 20rem;
+	max-width: 100%;
+	min-height: 3.25rem;
+	display: flex;
+	align-items: center;
+}
+
+.body {
+	background-color: #013F64;
+}
+
+.logo{
+	margin: 2%;
+	margin: 5%;
+}
+
+.centralizadortitulo {
+	text-align: center;
+	font-family: 'PT Serif', serif;
+	font-size: 2.5rem;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding:5%;
+}
+
+.centralizadorlegenda {
+	text-align: center;
+	font-family: 'PT Mono', monospace;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #E3B239;
+	font-weight: bold;
+	padding:0.5%;
+}
+
+.displayed {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid;
+}
+
+.blocktext {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 50.25rem;
+	padding: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.img-block1{
+	align-self: flex-start;
+	justify-content: flex-start;
+}
+
+.img-block1-1{
+	align-content: center;
+	
+}
+
+.img-block2{
+	align-self: flex-end;
+	justify-content: flex-start;
+}
+
+.img-block2-2{
+	align-self: flex-end;
+	justify-content: flex-end;
+}
+
+.blocktext2 {
+	display: flex;
+	justify-content: space-around;
+	max-width: 70rem;
+	min-height: 35rem;
+	padding: 1rem;
+	margin-left:35rem;
+	margin-right: auto;
+}
+.blocktext2-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 50%;
+	padding: 1rem;
+	list-style: circle;
+}
+
+.img-blockcat{
+	width: 90%;
+	height: 90%;
+	min-width: 20rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+}
+.img-blockpro{
+	display: flex;
+	width: 50%;
+	min-width: 30rem;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+}
+
+.title{
+	font-family: 'PT Mono', monospace;
+	font-size: 2rem;
+	text-decoration: none;
+	color: #E3B239;
+	
+
+}
+
+.title:hover {
+	color:#197c87;
+}
+
+.paragraph{
+	font-family: 'PT Mono', monospace;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: white;
+	padding: 1rem;
+}
+
+.nav{
+	font-size: 200%;
+	width: 100%;
+	display: flex;
+	align-items: center; 
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.nav2{
+	font-size: 200%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	list-style: circle;
+	margin-left: -7rem;
+}
+
+.link{
+	text-decoration: none;
+	color: white;
+}
+
+.link:hover {
+	color:#197c87;
+}
+
+.img-block4{
+	font-family: 'PT Mono', monospace;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: white;
+	left: 2rem;
+	top: 15rem;
+}
+
+.paragraph2{
+	font-family: 'PT Mono', monospace;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: white;
+}
+
+.paragraph3{
+	font-family: 'PT Mono', monospace;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #16BA45;
+	margin-top: 1rem;
+}
+
+.paragraph4{
+	font-family: 'PT Mono', monospace;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: white;
+	list-style: circle;
+	margin-left: 1.5rem;
+}
+
+.paragraph5{
+	font-family: 'PT Mono', monospace;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #16BA45;
+	left: 48rem;
+	top: 28rem;
+	margin-top: 1rem;
+}
+
+.paragraph6{
+	font-family: 'PT Mono', monospace;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: white;
+	list-style: circle;
+	margin-left: 1.5rem;
+}
+
+.paragraph7{
+	font-family: 'PT Mono', monospace;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #16BA45;
+	margin-top: 1rem;
+}
+
+.paragraph8{
+	font-family: 'PT Mono', monospace;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: white;
+	list-style: circle;
+	margin-left: 1.5rem;
+}
+
+.menu-figure{
+	display: none;
+}
+
+.titulo-mobile{
+	display: none;
+}
+
+
+@media (max-width: 375px) {
+    .header{
+        font-size: 0.3rem;
+		justify-content: space-between;
+    }
+
+    .centralizadortitulo{
+        font-size: 1.75rem;
+        display: none;
+    }
+
+    .menu-figure{
+    	display: block;
+    }
+
+    .menu-figure:hover .nav{
+    	display: block;
+    }
+    
+    .nav{
+    	display:none;
+    }
+
+    .displayed{
+    	margin-top: auto;
+    	width: 20rem;
+    }
+
+    .img-block2{
+    	width: 20rem;
+    	align-content: center;
+    }
+
+    .img-block1{
+    	width: 20rem;
+    	align-content: center;
+    }
+
+    .img-block1-1{
+    	width: 20rem;
+    	align-content: center;
+    }
+
+    .img-block2-2{
+    	width: 20rem;
+    	align-content: center;
+    }
+
+    .titulo-mobile{
+    	display:block;
+    	align-items: center;
+    	text-align: center;
+		font-family: 'PT Serif', serif;
+		font-size: 1.1rem;
+		text-decoration: none;
+		color: white;
+		font-weight: bold;
+		padding:5%;
+    }
+
+    .blocktext2{
+    	display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin: 0rem;
+		justify-content: space-between;
+    }
+
+    .title{
+    	display: flex;
+    	font-size: 1.5rem;
+    	padding-top: 1rem;
+    	text-align: left;
+    }
+
+    .paragraph{
+		display: flex;
+		font-size: 1rem;
+		text-align: center;
+    }
+
+    .img-blockpro{
+    	min-width: 90%;
+    	max-height: 30rem;
+    }
+
+    .paragraph8{
+		display: flex;
+		font-size: 1rem;
+		text-align: left;
+    }
+
+    .paragraph2{
+		display: flex;
+		font-size: 1rem;
+		text-align: left;
+    }
+
+    .paragraph3{
+		display: flex;
+		font-size: 1rem;
+		text-align: center;
+    }
+
+    .paragraph4{
+		display: flex;
+		font-size: 1rem;
+		text-align: left;
+		flex-direction: column;
+    }
+
+    .paragraph5{
+		display: flex;
+		font-size: 1rem;
+		text-align: center;
+    }
+
+    .paragraph6{
+		display: flex;
+		font-size: 1rem;
+		text-align: left;
+    }
+
+    .paragraph7{
+		display: flex;
+		font-size: 1rem;
+		text-align: center;
+    }
+
+    .nav2{
+    	font-size: 200%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		list-style: circle;
+		margin: 0rem;
+    }
+
+    .blocktext2-2{
+    	width: 100%;
+    }
+}
