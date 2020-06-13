@@ -37,7 +37,7 @@
 	font-family: 'PT Mono', monospace;
 	font-size: 1.5rem;
 	text-decoration: none;
-	color: #E3B239;
+	color: #FFFFFF;
 	font-weight: bold;
 	padding:0.5%;
 }
@@ -120,8 +120,6 @@
 	font-size: 2rem;
 	text-decoration: none;
 	color: #E3B239;
-	
-
 }
 
 .title:hover {
@@ -130,10 +128,10 @@
 
 .paragraph{
 	font-family: 'PT Mono', monospace;
-	font-size: 1.5rem;
-	text-decoration: none;
-	color: white;
+	font-size: 1.1rem;
+	color: #FFFFFF;
 	padding: 1rem;
+	display: block;
 }
 
 .nav{
@@ -233,61 +231,17 @@
 	margin-left: 1.5rem;
 }
 
-.menu-figure{
-	display: none;
-}
-
-.titulo-mobile{
-	display: none;
-}
-
-
 @media (max-width: 375px) {
     .header{
         font-size: 0.3rem;
 		justify-content: space-between;
     }
 
-    .centralizadortitulo{
-        font-size: 1.75rem;
-        display: none;
-    }
-
-    .menu-figure{
-    	display: block;
-    }
-
-    .menu-figure:hover .nav{
-    	display: block;
-    }
-    
-    .nav{
-    	display:none;
-    }
-
     .displayed{
-    	margin-top: auto;
-    	width: 20rem;
-    }
-
-    .img-block2{
-    	width: 20rem;
-    	align-content: center;
-    }
-
-    .img-block1{
-    	width: 20rem;
-    	align-content: center;
-    }
-
-    .img-block1-1{
-    	width: 20rem;
-    	align-content: center;
-    }
-
-    .img-block2-2{
-    	width: 20rem;
-    	align-content: center;
+    	margin-top: 1rem;
+    	margin-left: 1rem;
+    	width: 8rem;
+    	height: 8rem;
     }
 
     .titulo-mobile{
@@ -295,7 +249,7 @@
     	align-items: center;
     	text-align: center;
 		font-family: 'PT Serif', serif;
-		font-size: 1.1rem;
+		font-size: 1.75rem;
 		text-decoration: none;
 		color: white;
 		font-weight: bold;
@@ -317,70 +271,9 @@
     	text-align: left;
     }
 
-    .paragraph{
-		display: flex;
-		font-size: 1rem;
-		text-align: center;
-    }
-
-    .img-blockpro{
-    	min-width: 90%;
-    	max-height: 30rem;
-    }
-
-    .paragraph8{
-		display: flex;
-		font-size: 1rem;
-		text-align: left;
-    }
-
-    .paragraph2{
-		display: flex;
-		font-size: 1rem;
-		text-align: left;
-    }
-
-    .paragraph3{
-		display: flex;
-		font-size: 1rem;
-		text-align: center;
-    }
-
-    .paragraph4{
-		display: flex;
-		font-size: 1rem;
-		text-align: left;
-		flex-direction: column;
-    }
-
-    .paragraph5{
-		display: flex;
-		font-size: 1rem;
-		text-align: center;
-    }
-
-    .paragraph6{
-		display: flex;
-		font-size: 1rem;
-		text-align: left;
-    }
-
-    .paragraph7{
-		display: flex;
-		font-size: 1rem;
-		text-align: center;
-    }
-
-    .nav2{
-    	font-size: 200%;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		list-style: circle;
-		margin: 0rem;
-    }
-
-    .blocktext2-2{
-    	width: 100%;
-    }
+	.centralizadorlegenda{
+		margin-left: -12.5rem;
+		margin-top: 0.1rem;
+		font-size: 1.1rem;
+	}
 }

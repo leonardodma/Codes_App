@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <title>Index</title>
+  <title>Home</title>
   <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
@@ -11,30 +12,20 @@
   <meta charset='utf-8'>
   <meta name="viewport" content="width:width-device, initial-scale=1">
 </head>
+
 <body class="body">
   <header class="header">
-   <a href="index.html"><img width="80" height="80" src="./assets/img/logo.png" alt="Ícone de Portfólio"></a>
    <div class="titulo-mobile">
-    <h1>Bom dia Luiza! Essa são suas rotinas e tarefas:</h1>
+    <h1>Bom dia Luiza! Essas são suas rotinas e tarefas:</h1>
   </div>
-  <ul class="nav">
-    {{#each portfolio}}
-    <li class="nav-item"><a class="link" href="categoria.html?key={{@key}}">{{this.categoria}}</a></li>
-    {{/each}}
-  </ul>  
   </header>
 
-<main>
- <h1 class="centralizadortitulo">Portfólio de Projetos - Engenharia Insper</h1>
- <img width="400" height="500" class="displayed" src="./assets/img/foto_estudante.jpg" alt="Foto de Perfil">
- <h2 class="centralizadorlegenda">Lucas Andrade</h2>
- <h2 class="centralizadorlegenda">Engenharia Mecânica</h2>
+  <main>
+	 <img width="50" height="175" class="displayed" src="./assets/img/luiza.jpg" alt="Foto de Perfil">
+	 <h2 class="centralizadorlegenda">Luiza Marques </h2>
+	 <p class="paragraph">Nosso sistema identificou trânsito carregado na sua rota para o trabalho, por isso te acordamos mais cedo!</p>
 
- <h2 class="centralizadortitulo">Projetos:</h2>
- <nav class="blocktext" >
-  {{#each portfolio}}
-  <a href="categoria.html?key={{@key}}"><img width="400" height="300" class='img-block1' src="./assets/img/{{this.imagem}}" alt="Ícone de {{this.categoria}}"></a>
-  {{/each}}
+
   
 </nav>
 </main>
