@@ -2,7 +2,7 @@
 	border-style: solid;
 	margin: auto;
 	padding: 0.7rem;
-	background-color: #111820;
+	background-color: #2F0C60;
 	font-family: 'PT Mono', monospace;
 	font-size: 1rem;
 	font-weight: bold;
@@ -11,10 +11,13 @@
 	min-height: 3.25rem;
 	display: flex;
 	align-items: center;
+	position: fixed;
+	top: 0;
 }
 
 .body {
-	background-color: #013F64;
+	background-color: #FFFFFF;
+	margin-top: 10rem;
 }
 
 .logo{
@@ -27,7 +30,7 @@
 	font-family: 'PT Serif', serif;
 	font-size: 2.5rem;
 	text-decoration: none;
-	color: white;
+	color: #000000;
 	font-weight: bold;
 	padding:5%;
 }
@@ -37,7 +40,7 @@
 	font-family: 'PT Mono', monospace;
 	font-size: 1.5rem;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #000000;
 	font-weight: bold;
 	padding:0.5%;
 }
@@ -171,13 +174,6 @@
 	top: 15rem;
 }
 
-.paragraph2{
-	font-family: 'PT Mono', monospace;
-	font-size: 1.5rem;
-	text-decoration: none;
-	color: white;
-}
-
 .paragraph3{
 	font-family: 'PT Mono', monospace;
 	font-size: 1.5rem;
@@ -275,5 +271,42 @@
 		margin-left: -12.5rem;
 		margin-top: 0.1rem;
 		font-size: 1.1rem;
+	}
+
+	.paragraph{
+		align-content: space-around;
+		margin-left: 10rem;
+		margin-top: -10.5rem;
+		font-size: 1rem;
+		color: #000000;
+	}
+
+	.linha{
+		background-color: #000000;
+		height: 1.3px;
+	}
+
+	.paragraph2{
+		font-family: 'PT Mono', monospace;
+		font-size: 1.5rem;
+		color: #000000;
+	}
+
+	.item_escrever{
+		width: 2.8rem;
+		height: 2.8rem;
+		margin-top: -1rem;
+	}
+
+	.bloco2{
+		margin-top: 3rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		display: flex;	
+		justify-content: space-between;
+	}
+
+	.estatico{
+		position: fixed;
 	}
 }
