@@ -337,17 +337,12 @@ main{
 	.horas{
 		position: absolute;
 		margin-top: 16rem;
-		margin-left: 40px;
+		margin-left: 1rem;
 		font-size: 1.6rem;
-<<<<<<< HEAD
 		z-index: -1
-=======
-		list-style: none;
->>>>>>> f48ac49444e1f10a0e595c4ea2bb3b21466305d3
 	}
 
 	.quadrado{
-		padding: .3em 0 1em 40px;
-		background-image: url("./assets/img/quadrado.png") no-repeat;
+		list-style-image: url("./assets/img/quadrado.png");
 	}
 }
