@@ -1,3 +1,6 @@
+main{
+	display: block;
+}
 .header {
 	border-style: solid;
 	margin: auto;
@@ -299,6 +302,7 @@
 		margin-top: -1rem;
 	}
 
+
 	.bloco2{
 		margin-top: 3rem;
 		margin-left: 1rem;
@@ -309,6 +313,7 @@
 
 	.estatico{
 		position: fixed;
+		background-color: gold;
 	}
 
 	.bottom{
@@ -326,7 +331,7 @@
 	}
 
 	.rotina{
-		
+		height : 100%;
 	}
 
 	.horas{
@@ -334,6 +339,7 @@
 		margin-top: 16rem;
 		margin-left: 1rem;
 		font-size: 1.6rem;
+		z-index: -1
 	}
 
 	.quadrado{
