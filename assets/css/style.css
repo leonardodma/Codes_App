@@ -284,6 +284,7 @@
 	.linha{
 		background-color: #000000;
 		height: 1.3px;
+		position: static;
 	}
 
 	.paragraph2{
@@ -308,5 +309,34 @@
 
 	.estatico{
 		position: fixed;
+	}
+
+	.bottom{
+		border-style: solid;
+		margin: auto;
+		padding: 0.7rem;
+		background-color: #2F0C60;
+		min-width: 22rem;
+		max-width: 100%;
+		min-height: 3.25rem;
+		display: flex;
+		position: fixed;
+		bottom: 0;
+		justify-content: space-around;
+	}
+
+	.rotina{
+		
+	}
+
+	.horas{
+		position: absolute;
+		margin-top: 16rem;
+		margin-left: 1rem;
+		font-size: 1.6rem;
+	}
+
+	.quadrado{
+		list-style-image: url("./assets/img/quadrado.png");
 	}
 }
