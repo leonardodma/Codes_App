@@ -332,11 +332,13 @@
 	.horas{
 		position: absolute;
 		margin-top: 16rem;
-		margin-left: 1rem;
+		margin-left: 40px;
 		font-size: 1.6rem;
+		list-style: none;
 	}
 
 	.quadrado{
-		list-style-image: url("./assets/img/quadrado.png");
+		padding: .3em 0 1em 40px;
+		background-image: url("./assets/img/quadrado.png") no-repeat;
 	}
 }
