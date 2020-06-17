@@ -64,26 +64,6 @@ main{
 
 }
 
-.img-block1{
-	align-self: flex-start;
-	justify-content: flex-start;
-}
-
-.img-block1-1{
-	align-content: center;
-	
-}
-
-.img-block2{
-	align-self: flex-end;
-	justify-content: flex-start;
-}
-
-.img-block2-2{
-	align-self: flex-end;
-	justify-content: flex-end;
-}
-
 .blocktext2 {
 	display: flex;
 	justify-content: space-around;
@@ -100,23 +80,6 @@ main{
 	width: 50%;
 	padding: 1rem;
 	list-style: circle;
-}
-
-.img-blockcat{
-	width: 90%;
-	height: 90%;
-	min-width: 20rem;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 1rem;
-}
-.img-blockpro{
-	display: flex;
-	width: 50%;
-	min-width: 30rem;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 1rem;
 }
 
 .paragraph{
@@ -147,19 +110,20 @@ main{
 
 .paragraph3{
 	font-family: 'PT Mono', monospace;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	text-decoration: none;
-	color: #16BA45;
+	color: #64B4F9;
 	margin-top: 1rem;
+	margin-left: 1rem
 }
 
 .paragraph4{
 	font-family: 'PT Mono', monospace;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	text-decoration: none;
-	color: white;
-	list-style: circle;
-	margin-left: 1.5rem;
+	color: #64B4F9;
+	margin-top: 15rem;
+	margin-left: 1rem
 }
 
 .paragraph5{
@@ -354,13 +318,13 @@ main{
 	/*músic Player*/ 
 
 	.mainbox{
-	top:21rem;
+	top:19rem;
 	height:5.7rem;
 	width:18.2rem;
 	background-color: white;
 	position:absolute;
 	z-index:10;
-	left:1.5rem;
+	left:2.5rem;
 	box-shadow:0 0.7rem 0.84rem rgba(0, 0, 0, 0.3);
 	border-radius:1.4rem;
 	}
@@ -445,7 +409,7 @@ main{
 	.play-content{	
 	position:absolute;
 	z-index:5;
-	margin-top:5rem;
+	margin-top:2rem;
 	margin-left: 1rem;
 	font-family:sans-serif;
 	}
