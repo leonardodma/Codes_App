@@ -1,7 +1,7 @@
 main{
 	display: block;
 }
-.header {
+.cabecalho {
 	border-style: solid;
 	margin: auto;
 	padding: 0.7rem;
@@ -24,8 +24,7 @@ main{
 }
 
 .logo{
-	margin: 2%;
-	margin: 5%;
+	align-content: center;
 }
 
 .centralizadortitulo {
@@ -134,7 +133,7 @@ main{
 
 .paragraph{
 	font-family: 'PT Mono', monospace;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	color: #FFFFFF;
 	padding: 1rem;
 	display: block;
@@ -231,10 +230,15 @@ main{
 }
 
 @media (max-width: 375px) {
-    .header{
+    .cabecalho{
         font-size: 0.3rem;
 		justify-content: space-between;
     }
+
+    .logo{
+    	float: center;
+    	max-width: 100%;
+    	max-height: : 100%;   }
 
     .displayed{
     	margin-top: 1rem;
@@ -274,6 +278,7 @@ main{
 		margin-left: -12.5rem;
 		margin-top: 0.1rem;
 		font-size: 1.1rem;
+		color: #FA8BB5;
 	}
 
 	.paragraph{
@@ -285,7 +290,7 @@ main{
 	}
 
 	.linha{
-		background-color: #000000;
+		background-color: #5189BA;
 		height: 1.3px;
 		position: static;
 	}
@@ -293,7 +298,7 @@ main{
 	.paragraph2{
 		font-family: 'PT Mono', monospace;
 		font-size: 1.5rem;
-		color: #000000;
+		color: #5189BA;
 	}
 
 	.item_escrever{
@@ -312,8 +317,9 @@ main{
 	}
 
 	.estatico{
+		margin-top: -3rem;
 		position: fixed;
-		background-color: gold;
+		background-color: white;
 	}
 
 	.bottom{
@@ -332,6 +338,7 @@ main{
 
 	.rotina{
 		height : 100%;
+		margin-top: -2rem;
 	}
 
 	.horas{
