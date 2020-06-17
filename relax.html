@@ -1,42 +1,87 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<title>Categoria</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
-  <script src="assets/js/codes.js"></script>
-  <script src="assets/js/categoria.js"></script>
-  <meta charset='utf-8'>
-  <meta name="viewport" content="width:width-device, initial-scale=1">
-</head>
+  <!DOCTYPE html>
+  <html lang="pt-br">
 
-<body class="body">
-  <header class="header">
-   <a href="index.html"><img width="80" height="80" src="./assets/img/logo.png" alt="Ícone de Portfólio"></a>
-   <div class="titulo-mobile">
-    <h1>Projetos de {{categoria}}</h1>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width:width-device, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+  </head>
+
+  <body class="body">
+    <header class="cabecalho">
+      <a href="index.html"><img class="logo" src="./assets/img/logo_smartorganizer.jpg" alt="Logo"></a>
+    </header>
+
+    <main>
+      <div>
+        <h1 class="centralizadortitulo">Relaxamento</h1> 
+
+        <!-- Início Audio Player-->
+        <div>
+
+          <!--audio file-->
+          <audio id="myTrack">
+            <source src="finding-hope---300-am.mp3" type="audio/mp3"/>
+          </audio>
+
+          <div class="mainbox">
+
+            <div class="roundbox">
+             <img src="photo.jpg">
+
+             <div class="smallbox"></div>
+
+             <div class="button">
+               <a class="backward"><i class="fa fa-backward" aria-hidden="true"></i></a>
+
+               <button type="button" id="playButton"></button>
+
+               <a class="forward"><i class="fa fa-forward" aria-hidden="true"></i></a>
+             </div>
+
+           </div>
+           <!--mute or volume btn-->
+           <button type="button" id="muteButton"></button>
+
+         </div>
+
+       </div>
+       <!--Fim Áudio Player-->
+
+       <!-- backward playbarbox -->
+       <div class="playbar-box"> 
+         <div class="play-content">
+          <span class="text1">Finding Hope</span><br>
+          <span class="text2">baby its 3 AM</span>
+
+          <div id="defultBar">
+           <div id="progressBar"></div>
+         </div>
+
+       </div>
+     </div>
+
+   </div>
+
+   <div class="bottom">
+    <a href="index.html"><img width="50" height="50" class="home" src="./assets/img/home.png" alt="Home item"></a>
+
+    <a href="relax.html"><img width="50" height="50" class="home" src="./assets/img/relax.png" alt="Relax item"></a>
+
+    <a href="gamefication.html"><img width="50" height="50" class="home" src="./assets/img/challenges.png" alt="Challenges item"></a>
+
+    <a href="settings.html"><img width="50" height="50" class="home" src="./assets/img/conf.png" alt="Conf item"></a>
   </div>
-  <ul class="nav">
-    {{#each portfolio}}
-    <li class="nav-item"><a class="link" href="categoria.html?key={{@key}}">{{this.categoria}}</a></li>
-    {{/each}}
-  </ul>  
-  </header>
+  <script type="text/javascript" src="music.js"></script>
 
-
-<h1 class="centralizadortitulo">Projetos de {{categoria}}</h1>
-
-<nav class="blocktext2">
-  <div class='blocktext2-2'>
-    <ul class="nav2">
-    {{#each projetos}}
-    <li class=nav-item2><a class="title" href="portfolio.html?key={{@key}}">{{this.titulo}}</a></li>
-    {{/each}}
-  </ul> 
-    
-  </div>
-</nav>
+</main>
 </body>
 </html>

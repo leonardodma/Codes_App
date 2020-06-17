@@ -6,7 +6,6 @@ main{
 	margin: auto;
 	padding: 0.7rem;
 	background-color: #2F0C60;
-	font-family: 'PT Mono', monospace;
 	font-size: 1rem;
 	font-weight: bold;
 	min-width: 20rem;
@@ -30,11 +29,11 @@ main{
 .centralizadortitulo {
 	text-align: center;
 	font-family: 'PT Serif', serif;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	text-decoration: none;
-	color: #000000;
+	color: #5189BA;
 	font-weight: bold;
-	padding:5%;
+	margin-top: -3rem;
 }
 
 .centralizadorlegenda {
@@ -120,42 +119,12 @@ main{
 	padding: 1rem;
 }
 
-.title{
-	font-family: 'PT Mono', monospace;
-	font-size: 2rem;
-	text-decoration: none;
-	color: #E3B239;
-}
-
-.title:hover {
-	color:#197c87;
-}
-
 .paragraph{
 	font-family: 'PT Mono', monospace;
 	font-size: 1.2rem;
 	color: #FFFFFF;
 	padding: 1rem;
 	display: block;
-}
-
-.nav{
-	font-size: 200%;
-	width: 100%;
-	display: flex;
-	align-items: center; 
-	flex-direction: row;
-	justify-content: space-around;
-}
-
-.nav2{
-	font-size: 200%;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	list-style: circle;
-	margin-left: -7rem;
 }
 
 .link{
@@ -233,6 +202,7 @@ main{
     .cabecalho{
         font-size: 0.3rem;
 		justify-content: space-between;
+
     }
 
     .logo{
@@ -265,6 +235,8 @@ main{
 		text-align: center;
 		margin: 0rem;
 		justify-content: space-between;
+		background-color: gold;
+
     }
 
     .title{
@@ -344,12 +316,6 @@ main{
     	width: 100rem;
 	}
 
-	.dia{
-		color: #C072E9
-		text-transform:uppercase;
-		align-content: center;
-	}
-
 	.task{
 		display: flex;
 		align-items: center;
@@ -382,8 +348,123 @@ main{
 		
 	} 
 	.task input:checked ~ .text{
-		color: #FA8BB5;
-		
-	} 	
+		color: #FA8BB5;	
+	} 
 
+	/*músic Player*/ 
+
+	.mainbox{
+	top:21rem;
+	height:5.7rem;
+	width:18.2rem;
+	background-color: white;
+	position:absolute;
+	z-index:10;
+	left:1.5rem;
+	box-shadow:0 0.7rem 0.84rem rgba(0, 0, 0, 0.3);
+	border-radius:1.4rem;
+	}
+
+	.roundbox{
+	position:absolute;
+	z-index:15;
+	left:1.3rem;
+	height:5.95rem;
+	width:5.95rem;
+	background-color:#FC9;
+	border-radius:15.75rem;
+	top:-2.1rem;
+	box-shadow:0 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+	}
+	.roundbox img{
+	width:5.95rem;
+	height:5.95rem;
+	border-radius:4rem;
+	-webkit-animation:r1 6s linear infinite;
+	animation:r1 6s linear infinite; 
+	}
+	@keyframes r1{
+	0%{transform:rotate(-360deg)};
+	10%{transform:rotate(0deg)};
+	}
+
+	/*small hole at image box*/
+	.smallbox{
+	position:absolute;
+	z-index:17;
+	left:35px;
+	top:35px;
+	height:24.5px;
+	width:24.5px;
+	background-color:#fff4f4;
+	border-radius:252px;
+	}
+
+	.button{
+	height:49px;
+	width:154px;
+	position:absolute;
+	z-index:17;
+	top:45.5px;
+	left:130px;
+	}
+
+	#playButton{
+	background-image:url(icon/icons8-play-50.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	height:50px;
+	width:50px;
+	border-radius:10.5px;
+	cursor:pointer;
+	border:none;
+	}
+	#playButton:active{
+	position:relative;
+	top:1.4px;
+	}
+	.#playButton:hover{
+	background-color:#CCC;
+	}
+
+	#muteButton{
+	background-image:url(icon/icons8-voice-filled-15.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	height:21px;
+	width:21px;
+	border-radius:3.5px;
+	cursor:pointer;
+	border:none;
+	background-color:#fff;
+	margin-top:63px;
+	margin-left:10.5px;
+	}
+
+	/*backward playbar-box-css*/
+	.play-content{	
+	position:absolute;
+	z-index:5;
+	margin-top:5rem;
+	margin-left: 1rem;
+	font-family:sans-serif;
+	}
+
+	.text1{
+	font-weight:bold;
+	font-size:1rem;
+	text-align: center;
+
+	}
+	.text2{
+	font-size:0.9rem;
+	text-align: center;
+	}
+
+	#progressBar{
+	height:3px;
+	width:0px;
+	border-radius:2px;
+	background:#F96;
+	}	
 }
