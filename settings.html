@@ -1,54 +1,134 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<title>Projeto</title>
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
-  <script src="assets/js/codes.js"></script>
-  <script src="assets/js/projeto.js"></script>
-  <meta charset='utf-8'>
-  <meta name="viewport" content="width:width-device, initial-scale=1">
-</head>
+ <!DOCTYPE html>
+  <html lang="pt-br">
 
-<body class="body">
-  <header class="header">
-   <a href="index.html"><img width="80" height="80" src="./assets/img/logo.png" alt="Ícone de Portfólio"></a>
-   <div class="titulo-mobile">
-    <h1>{{titulo}}</h1>
-  </div>
-  <ul class="nav">
-   {{#each portfolio}}
-   <li class="nav-item"><a class="link" href="categoria.html?key={{@key}}">{{this.categoria}}</a></li>
-   {{/each}}
- </ul>
-</header>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width:width-device, initial-scale=1">
+  </head>
+
+  <body class="body">
+    <header class="cabecalho">
+        <a href="index.html"><img class="logo" src="./assets/img/logo_smartorganizer.jpg" alt="Logo"></a>
+    </header>
+
+    <main>
+      <div>
+       <h1 class="centralizadortitulo">Edição de rotina</h1> 
+      </div>
+
+      <div class="rotina_edicao">
+        <label class="task"> 
+          <input type="checkbox">
+          <i class="fas fa-check"></i>
+          <span class="text">6:30: Rotina matinal</span>
+        </label>
+
+        <label class="task"> 
+          <input type="checkbox">
+          <i class="fas fa-check"></i>
+          <span class="text">7:30: Meditação</span>
+        </label>
+
+        <label class="task"> 
+          <input type="checkbox">
+          <i class="fas fa-check"></i>
+          <span class="text">8:00: Sair para trabalho</span>
+        </label>
+
+        <label class="task"> 
+          <input type="checkbox">
+          <i class="fas fa-check"></i>
+          <span class="text">9:00: Reunião com equipe</span>
+        </label>
+
+        <label class="task"> 
+          <input type="checkbox">
+          <i class="fas fa-check"></i>
+          <span class="text">11:00: Café com colegas</span>
+        </label>
+
+        <label class="task"> 
+          <input type="checkbox">
+          <i class="fas fa-check"></i>
+          <span class="text">11:30: Trabalho em equipe com João</span>
+        </label>
+
+        <label class="task"> 
+          <input type="checkbox">
+          <i class="fas fa-check"></i>
+          <span class="text">13:30: Horário de Almoço</span>
+        </label>
+
+        <label class="task"> 
+          <input type="checkbox">
+          <i class="fas fa-check"></i>
+          <span class="text">14:30: Iníciar relatório estatísitco</span>
+        </label>
+
+        <label class="task"> 
+          <input type="checkbox">
+          <i class="fas fa-check"></i>
+          <span class="text">17:00: Fim do expediente</span>
+        </label>
+
+        <label class="task"> 
+          <input type="checkbox">
+          <i class="fas fa-check"></i>
+          <span class="text">17:05: Direcionar-se a academia</span>
+        </label>
+
+        <label class="task"> 
+          <input type="checkbox">
+          <i class="fas fa-check"></i>
+          <span class="text">17:45: Início do Treino</span>
+        </label>
+
+        <label class="task"> 
+          <input type="checkbox">
+          <i class="fas fa-check"></i>
+          <span class="text">19:00: Fim do Treino</span>
+        </label>
+
+        <label class="task"> 
+          <input type="checkbox">
+          <i class="fas fa-check"></i>
+          <span class="text">19:30: Jantar e Lazer</span>
+        </label>
+
+        <label class="task"> 
+          <input type="checkbox">
+          <i class="fas fa-check"></i>
+          <span class="text">22:30: Meditação</span>
+        </label>
+
+        <label class="task"> 
+          <input type="checkbox">
+          <i class="fas fa-check"></i>
+          <span class="text">23:00: Dormir</span>
+        </label>
+      </div>
 
 
-<h1 class="centralizadortitulo">{{titulo}}</h1>
-<nav class='blocktext2'>
- <img class="img-blockpro" src="./assets/img/{{imagem}}" alt="Projeto de {{titulo}}">
- <div class="blocktext2-2">
-   <p class="paragraph2">Descrição:{{descricao}}</p>
-
-   <p class="paragraph3">Equipe:</p>
-   <ul class="paragraph4">
-     <li>{{equipe}}</li>
-   </ul>
-
-   <p class="paragraph5">Materiais:</p>
-   <ul class="paragraph6">
-     <li>{{materiais}}</li>
-   </ul>
-
-   <p class="paragraph7">Salas:</p>
-   <ul class="paragraph8">
-    <li>{{salas}}</li>
-  </ul>
-</div>
-</nav>
 
 
-</body>
-</html>
+      <div class="bottom">
+        <a href="index.html"><img width="50" height="50" class="home" src="./assets/img/home.png" alt="Home item"></a>
+
+        <a href="relax.html"><img width="50" height="50" class="home" src="./assets/img/relax.png" alt="Relax item"></a>
+
+        <a href="gamefication.html"><img width="50" height="50" class="home" src="./assets/img/challenges.png" alt="Challenges item"></a>
+
+        <a href="settings.html"><img width="50" height="50" class="home" src="./assets/img/conf.png" alt="Conf item"></a>
+      </div>
+      
+  </nav>
+
+  </main>
+  </body>
+  </html>

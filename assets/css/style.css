@@ -166,6 +166,7 @@ main{
     .cabecalho{
         font-size: 0.3rem;
 		justify-content: space-between;
+		z-index: 1;
 
     }
 
@@ -253,9 +254,10 @@ main{
 	}
 
 	.estatico{
-		margin-top: -3rem;
+		margin-top: -4rem;
 		position: fixed;
 		background-color: white;
+		z-index: 1;
 	}
 
 	.bottom{
@@ -274,10 +276,12 @@ main{
 
 	.rotina{
 		position: absolute;
-		top: 50%;
-		max-width: 100%;
-    	max-height: : 100%;
-    	width: 100rem;
+		margin-top: 14.5rem;
+		min-height: 100%;
+	}
+
+	.rotina_edicao{
+		justify-content: space-around;
 	}
 
 	.task{
