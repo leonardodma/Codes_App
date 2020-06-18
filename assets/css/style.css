@@ -28,17 +28,19 @@ main{
 
 .centralizadortitulo {
 	text-align: center;
-	font-family: 'PT Serif', serif;
-	font-size: 2rem;
+	font-family: 'Noto Sans JP', sans-serif; 
+	font-size: 1.5rem;
 	text-decoration: none;
 	color: #5189BA;
 	font-weight: bold;
 	margin-top: -3rem;
+	max-width: 100%;
+    max-height: : 100%;
 }
 
 .centralizadorlegenda {
 	text-align: center;
-	font-family: 'PT Mono', monospace;
+	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 1.5rem;
 	text-decoration: none;
 	color: #000000;
@@ -83,7 +85,7 @@ main{
 }
 
 .paragraph{
-	font-family: 'PT Mono', monospace;
+	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 1.2rem;
 	color: #FFFFFF;
 	padding: 1rem;
@@ -100,7 +102,7 @@ main{
 }
 
 .img-block4{
-	font-family: 'PT Mono', monospace;
+	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 1.5rem;
 	text-decoration: none;
 	color: white;
@@ -109,7 +111,7 @@ main{
 }
 
 .paragraph3{
-	font-family: 'PT Mono', monospace;
+	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 2rem;
 	text-decoration: none;
 	color: #64B4F9;
@@ -118,7 +120,7 @@ main{
 }
 
 .paragraph4{
-	font-family: 'PT Mono', monospace;
+	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 2rem;
 	text-decoration: none;
 	color: #64B4F9;
@@ -127,7 +129,7 @@ main{
 }
 
 .paragraph5{
-	font-family: 'PT Mono', monospace;
+	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 1.5rem;
 	text-decoration: none;
 	color: #16BA45;
@@ -137,7 +139,7 @@ main{
 }
 
 .paragraph6{
-	font-family: 'PT Mono', monospace;
+	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 1.5rem;
 	text-decoration: none;
 	color: white;
@@ -146,7 +148,7 @@ main{
 }
 
 .paragraph7{
-	font-family: 'PT Mono', monospace;
+	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 1.5rem;
 	text-decoration: none;
 	color: #16BA45;
@@ -154,7 +156,7 @@ main{
 }
 
 .paragraph8{
-	font-family: 'PT Mono', monospace;
+	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 1.5rem;
 	text-decoration: none;
 	color: white;
@@ -186,7 +188,7 @@ main{
     	display:block;
     	align-items: center;
     	text-align: center;
-		font-family: 'PT Serif', serif;
+		font-family: 'Noto Sans JP', sans-serif; 
 		font-size: 1.75rem;
 		text-decoration: none;
 		color: white;
@@ -233,7 +235,7 @@ main{
 	}
 
 	.paragraph2{
-		font-family: 'PT Mono', monospace;
+		font-family: 'Noto Sans JP', sans-serif;
 		font-size: 1.5rem;
 		color: #5189BA;
 	}
@@ -278,10 +280,14 @@ main{
 		position: absolute;
 		margin-top: 14.5rem;
 		min-height: 100%;
+		font-family: 'Noto Sans JP', sans-serif;
+		max-width: 100%;
+    	max-height: : 100%;
 	}
 
 	.rotina_edicao{
 		justify-content: space-around;
+		font-family: 'Noto Sans JP', sans-serif;
 	}
 
 	.task{
@@ -476,7 +482,7 @@ main{
 	}
 
 	.paragraph5{
-		font-family: 'PT Mono', monospace;
+		font-family: 'Noto Sans JP', sans-serif;
 		font-size: 1.5rem;
 		color: #5189BA;
 		padding-bottom: 5%;
