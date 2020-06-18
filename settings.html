@@ -10,8 +10,23 @@
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <meta charset='utf-8'>
     <meta name="viewport" content="width:width-device, initial-scale=1">
-  </head>
 
+    <script type="text/javascript">
+      function saveEdits(){
+        var editElem = document.getElementById('edit');
+        var userVersion = editElem.innerHTML;
+        localStorage.userEdits = userVersion;
+        document.getElementById("update").innerHTML="Edits Saved!";
+      }
+
+      function checkEdits(){
+        if(localStorage.userEdits != null)
+          document.getElementById("edit").innerHTML=localStorage.userEdits;
+      }
+
+    </script>
+  
+  </head>
   <body class="body">
     <header class="cabecalho">
         <a href="index.html"><img class="logo" src="./assets/img/logo_smartorganizer.jpg" alt="Logo"></a>
@@ -26,96 +41,167 @@
         <label class="task"> 
           <input type="checkbox">
           <i class="fas fa-check"></i>
-          <span class="text">6:30: Rotina matinal</span>
+          <span class="text">
+            <div id="edit" contenteditable="true">
+              6:30: Rotina matinal
+            </div>
+            <div id="update"></div>
+          </span>
         </label>
 
         <label class="task"> 
           <input type="checkbox">
           <i class="fas fa-check"></i>
-          <span class="text">7:30: Meditação</span>
+          <span class="text">
+            <div id="edit" contenteditable="true">
+              7:30: Meditação
+            </div>
+            <div id="update"></div>
+          </span>
         </label>
 
         <label class="task"> 
           <input type="checkbox">
           <i class="fas fa-check"></i>
-          <span class="text">8:00: Sair para trabalho</span>
+          <span class="text">
+            <div id="edit" contenteditable="true">
+              8:00: Sair para trabalho
+            </div>
+            <div id="update"></div>
+          </span>
         </label>
 
         <label class="task"> 
           <input type="checkbox">
           <i class="fas fa-check"></i>
-          <span class="text">9:00: Reunião com equipe</span>
+          <span class="text">
+            <div id="edit" contenteditable="true">
+              9:00: Reunião com equipe
+            </div>
+            <div id="update"></div>
+          </span>
         </label>
 
         <label class="task"> 
           <input type="checkbox">
           <i class="fas fa-check"></i>
-          <span class="text">11:00: Café com colegas</span>
+          <span class="text">
+            <div id="edit" contenteditable="true">
+              11:00: Café com colegas
+            </div>
+            <div id="update"></div>
+          </span>
         </label>
 
         <label class="task"> 
           <input type="checkbox">
           <i class="fas fa-check"></i>
-          <span class="text">11:30: Trabalho em equipe com João</span>
+          <span class="text">
+            <div id="edit" contenteditable="true">
+              11:30: Trabalho em equipe com João
+            </div>
+            <div id="update"></div>
+          </span>
         </label>
 
         <label class="task"> 
           <input type="checkbox">
           <i class="fas fa-check"></i>
-          <span class="text">13:30: Horário de Almoço</span>
+          <span class="text">
+            <div id="edit" contenteditable="true">
+              13:30: Horário de Almoço
+            </div>
+            <div id="update"></div>
+          </span>
         </label>
 
         <label class="task"> 
           <input type="checkbox">
           <i class="fas fa-check"></i>
-          <span class="text">14:30: Iníciar relatório estatísitco</span>
+          <span class="text">
+            <div id="edit" contenteditable="true">
+              14:30: Iníciar relatório estatísitco
+            </div>
+            <div id="update"></div>
+          </span>
         </label>
 
         <label class="task"> 
           <input type="checkbox">
           <i class="fas fa-check"></i>
-          <span class="text">17:00: Fim do expediente</span>
+          <span class="text">
+            <div id="edit" contenteditable="true">
+              17:00: Fim do expediente
+            </div>
+            <div id="update"></div>
+          </span>
         </label>
 
         <label class="task"> 
           <input type="checkbox">
           <i class="fas fa-check"></i>
-          <span class="text">17:05: Direcionar-se a academia</span>
+          <span class="text">
+            <div id="edit" contenteditable="true">
+              17:05: Direcionar-se a academia
+            </div>
+            <div id="update"></div>
+          </span>
         </label>
 
         <label class="task"> 
           <input type="checkbox">
           <i class="fas fa-check"></i>
-          <span class="text">17:45: Início do Treino</span>
+          <span class="text">
+            <div id="edit" contenteditable="true">
+              17:45: Início do Treino
+            </div>
+            <div id="update"></div>
+          </span>
         </label>
 
         <label class="task"> 
           <input type="checkbox">
           <i class="fas fa-check"></i>
-          <span class="text">19:00: Fim do Treino</span>
+          <span class="text">
+            <div id="edit" contenteditable="true">
+              19:00: Fim do Treino
+            </div>
+            <div id="update"></div>
+          </span>
         </label>
 
         <label class="task"> 
           <input type="checkbox">
           <i class="fas fa-check"></i>
-          <span class="text">19:30: Jantar e Lazer</span>
+          <span class="text">
+            <div id="edit" contenteditable="true">
+              19:30: Jantar e Lazer
+            </div>
+            <div id="update"></div>
+          </span>
         </label>
 
         <label class="task"> 
           <input type="checkbox">
           <i class="fas fa-check"></i>
-          <span class="text">22:30: Meditação</span>
+          <span class="text">
+            <div id="edit" contenteditable="true">
+              22:30: Meditação
+            </div>
+            <div id="update"></div>
+          </span>
         </label>
 
         <label class="task"> 
           <input type="checkbox">
           <i class="fas fa-check"></i>
-          <span class="text">23:00: Dormir</span>
+          <span class="text">
+            <div id="edit" contenteditable="true">
+              23:00: Dormir
+            </div>
+            <div id="update"></div>
+          </span>
         </label>
-      </div>
-
-
-
 
       <div class="bottom">
         <a href="index.html"><img width="50" height="50" class="home" src="./assets/img/home.png" alt="Home item"></a>
@@ -127,7 +213,7 @@
         <a href="settings.html"><img width="50" height="50" class="home" src="./assets/img/conf.png" alt="Conf item"></a>
       </div>
       
-  </nav>
+      <input type="button" value="save my edits" onclick="saveEdits()"/>
 
   </main>
   </body>
