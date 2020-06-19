@@ -41,7 +41,7 @@ main{
 .centralizadorlegenda {
 	text-align: center;
 	font-family: 'Noto Sans JP', sans-serif;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	text-decoration: none;
 	color: #000000;
 	font-weight: bold;
@@ -52,7 +52,6 @@ main{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	border: solid;
 }
 
 .blocktext {
@@ -66,48 +65,12 @@ main{
 
 }
 
-.blocktext2 {
-	display: flex;
-	justify-content: space-around;
-	max-width: 70rem;
-	min-height: 35rem;
-	padding: 1rem;
-	margin-left:35rem;
-	margin-right: auto;
-}
-.blocktext2-2 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 50%;
-	padding: 1rem;
-	list-style: circle;
-}
-
 .paragraph{
 	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 1.2rem;
 	color: #FFFFFF;
 	padding: 1rem;
 	display: block;
-}
-
-.link{
-	text-decoration: none;
-	color: white;
-}
-
-.link:hover {
-	color:#197c87;
-}
-
-.img-block4{
-	font-family: 'Noto Sans JP', sans-serif;
-	font-size: 1.5rem;
-	text-decoration: none;
-	color: white;
-	left: 2rem;
-	top: 15rem;
 }
 
 .paragraph3{
@@ -138,32 +101,6 @@ main{
 	margin-top: 1rem;
 }
 
-.paragraph6{
-	font-family: 'Noto Sans JP', sans-serif;
-	font-size: 1.5rem;
-	text-decoration: none;
-	color: white;
-	list-style: circle;
-	margin-left: 1.5rem;
-}
-
-.paragraph7{
-	font-family: 'Noto Sans JP', sans-serif;
-	font-size: 1.5rem;
-	text-decoration: none;
-	color: #16BA45;
-	margin-top: 1rem;
-}
-
-.paragraph8{
-	font-family: 'Noto Sans JP', sans-serif;
-	font-size: 1.5rem;
-	text-decoration: none;
-	color: white;
-	list-style: circle;
-	margin-left: 1.5rem;
-}
-
 @media (max-width: 375px) {
 	.cabecalho{
 		font-size: 0.3rem;
@@ -184,39 +121,10 @@ main{
 		height: 8rem;
 	}
 
-	.titulo-mobile{
-		display:block;
-		align-items: center;
-		text-align: center;
-		font-family: 'Changa One', cursive; 
-		font-size: 1.75rem;
-		text-decoration: none;
-		color: white;
-		font-weight: bold;
-		padding:5%;
-	}
-
-	.blocktext2{
-		display: flex;
-		flex-direction: column;
-		text-align: center;
-		margin: 0rem;
-		justify-content: space-between;
-		background-color: gold;
-
-	}
-
-	.title{
-		display: flex;
-		font-size: 1.5rem;
-		padding-top: 1rem;
-		text-align: left;
-	}
-
 	.centralizadorlegenda{
-		margin-left: -12.5rem;
+		margin-left: -13.5rem;
 		margin-top: 0.1rem;
-		font-size: 1.1rem;
+		font-size: 0.8rem;
 		color: #FA8BB5;
 	}
 
@@ -281,8 +189,9 @@ main{
 		margin-top: 14.5rem;
 		min-height: 100%;
 		font-family: 'Noto Sans JP', sans-serif;
-		max-width: 100%;
+		width: 100%;
 		max-height: : 100%;
+
 	}
 
 	.rotina_edicao{
@@ -304,12 +213,14 @@ main{
 		display: flex;
 		align-items: center;
 		cursor: pointer;
+		padding:0.5rem;
 	}
 
 	.text{
 		font-size: 1rem;
 		color: black;
 		font-family: 'Noto Sans JP', sans-serif;
+		margin-left: 0.5rem;
 	}
 
 	.task input{
@@ -319,22 +230,67 @@ main{
 
 	.task i{
 		display: inline-block;
-		width: 3rem;
-		height: 3rem;
-		border-radius: 50%;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 100%;
 		border: 1px solid #C072E9;
 		text-align: center;
-		line-height: 3rem;
+		line-height: 2rem;
 		color: transparent;
 	}
 
 	.task input:checked ~ i{
 		color: #FA8BB5;
-
 	} 
 	.task input:checked ~ .text{
-		color: #FA8BB5;	
-	} 
+		color: #FA8BB5;
+	}
+
+	.grafico{
+		width: 100%;
+		padding-bottom: 5%;
+		padding-top: 5%;
+	}
+
+	.frase{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 1px solid black;
+		padding-bottom: 2%;
+		padding-top: 2%;
+
+	}
+
+	.metas{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 5%;
+	}
+
+	.meta{
+		font-size: 1.1rem;
+		color: #FA8BB5;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		background-color: black;
+		width: 100%;
+		text-align: center;
+	}
+
+	.meta2{
+		font-size: 1.1rem;
+		color: #FA8BB5;
+		padding: 5%;
+	}
+
+	.paragraph5{
+		font-family: 'Noto Sans JP', sans-serif;
+		font-size: 1.5rem;
+		color: #5189BA;
+		padding-bottom: 5%;
+	}
 
 	/*músic Player*/ 
 
@@ -395,7 +351,7 @@ main{
 	}
 
 	#playButton{
-		background-image:url(icon/icons8-play-50.png);
+		background-image:url(assets/img/icons8-play-50.png);
 		background-repeat:no-repeat;
 		background-position:center;
 		height:50px;
@@ -413,7 +369,7 @@ main{
 	}
 
 	#muteButton{
-		background-image:url(icon/icons8-voice-filled-15.png);
+		background-image:url(assets/img/icons8-voice-filled-15.png);
 		background-repeat:no-repeat;
 		background-position:center;
 		height:21px;
@@ -444,57 +400,4 @@ main{
 	.text2{
 		font-size:0.9rem;
 		text-align: center;
-	}
-
-	#progressBar{
-		height:3px;
-		width:0px;
-		border-radius:2px;
-		background:#F96;
-	}	
-
-	.grafico{
-		width: 100%;
-		padding-bottom: 5%;
-		padding-top: 5%;
-	}
-
-	.frase{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		border: 1px solid black;
-		padding-bottom: 2%;
-		padding-top: 2%;
-
-	}
-
-	.metas{
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		padding-top: 5%;
-	}
-
-	.meta{
-		font-size: 1.1rem;
-		color: #FA8BB5;
-		padding-top: 5%;
-		padding-bottom: 5%;
-		background-color: black;
-		width: 100%;
-		text-align: center;
-	}
-
-	.meta2{
-		font-size: 1.1rem;
-		color: #FA8BB5;
-		padding: 5%;
-	}
-
-	.paragraph5{
-		font-family: 'Noto Sans JP', sans-serif;
-		font-size: 1.5rem;
-		color: #5189BA;
-		padding-bottom: 5%;
 	}

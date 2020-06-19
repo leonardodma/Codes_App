@@ -64,7 +64,7 @@ function playOrPause(){
 	if(!mytrack.paused && !mytrack.ended){
 		mytrack.pause();
 		
-		playButton.style.backgroundImage = 'url(icon/icons8-play-50.png)';
+		playButton.style.backgroundImage = 'url(assets/img/icons8-play-50.png)';
 		playButton.style.backgroundColor ='#FFF';
 		
 		window.clearInterval(updateTime);//stop when pause
@@ -72,7 +72,7 @@ function playOrPause(){
 	else{
 		mytrack.play();
 		
-		playButton.style.backgroundImage = 'url(icon/icons8-pause-50.png)';
+		playButton.style.backgroundImage = 'url(assets/img/icons8-pause-50.png)';
 		playButton.style.backgroundColor ='#fff4f4';
 		
 		updateTime = setInterval(update,500); //update time each
@@ -84,13 +84,13 @@ function muteOrUnmute(){
 	if(mytrack.muted == true){
 		mytrack.muted = false;
 		
-		muteButton.style.backgroundImage = 'url(icon/icons8-voice-filled-15.png)';
+		muteButton.style.backgroundImage = 'url(assets/img/icons8-voice-filled-15.png)';
 		muteButton.style.backgroundColor ='#FFF';
 	}
 	else{
 		mytrack.muted = true;
 		
-		muteButton.style.backgroundImage = 'url(icon/icons8-mute-filled-15.png)';
+		muteButton.style.backgroundImage = 'url(assets/img/icons8-mute-filled-15.png)';
 		muteButton.style.backgroundColor ='#fff4f4';
 	}
 }
@@ -110,7 +110,7 @@ function update(){
 		currentTime.innerHTML = "0.00";
 		
 		//whenever audio ended play buttom replace at end
-		playButton.style.backgroundImage = 'url(icon/icons8-play-50.png)';
+		playButton.style.backgroundImage = 'url(assets/img/icons8-play-50.png)';
 		playButton.style.backgroundColor ='#FFF';
 		
 		progressBar.style.width = "0px";
