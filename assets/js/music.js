@@ -2,9 +2,9 @@
 
 /*creating click event for nav-bar*/
 $(document).ready(function(){
-  $('a#click-a').click(function(){
-    $('.nav').toggleClass('nav-view');
-  });
+	$('a#click-a').click(function(){
+		$('.nav').toggleClass('nav-view');
+	});
 });
 
 /*dropbox buttom*/
@@ -22,24 +22,24 @@ $(document).ready(function(){
 	  }else{
 		  $('#dropbtn').toggleClass('rightMenu button')
 	  }
-  });*/
+	});*/
 
 
 
-var mytrack = document.getElementById('myTrack');
-var playButton = document.getElementById('playButton');
-var muteButton = document.getElementById('muteButton');
+	var mytrack = document.getElementById('myTrack');
+	var playButton = document.getElementById('playButton');
+	var muteButton = document.getElementById('muteButton');
 
-var duration = document.getElementById('fullDuration');
-var currentTime = document.getElementById('currentTime');
+	var duration = document.getElementById('fullDuration');
+	var currentTime = document.getElementById('currentTime');
 
-var minutes = pad(parseInt(mytrack.duraction/60));
-var seconds = pad(parseInt(mytrack.duration%60));
+	var minutes = pad(parseInt(mytrack.duraction/60));
+	var seconds = pad(parseInt(mytrack.duration%60));
 
 
-var barSize = 200;
-var bar = document.getElementById('defultBar');
-var progressBar = document.getElementById('progressBar');
+	var barSize = 200;
+	var bar = document.getElementById('defultBar');
+	var progressBar = document.getElementById('progressBar');
 
 
 //Fullduraction time of audio track timer JS.
@@ -48,7 +48,7 @@ mytrack.addEventListener("loadedmetadata", function () {
     var minutes = pad(parseInt(mytrack.duration / 60));
     var seconds = pad(parseInt(mytrack.duration % 60));
     duration.innerHTML = minutes + ':' + seconds;
-});﻿
+  });﻿
 
 
 
