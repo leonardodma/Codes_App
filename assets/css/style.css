@@ -27,21 +27,19 @@ main{
 
 .logo{
 	align-content: center;
-	float: center;
 	max-width: 100%;
-	max-height: : 100%;
+	max-height: 100%;
 }
 
 .centralizadortitulo {
 	text-align: center;
 	font-family: 'Changa One', cursive; 
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 	text-decoration: none;
 	color: #5189BA;
-	font-weight: bold;
 	margin-top: -3rem;
 	max-width: 100%;
-	max-height: : 100%;
+	max-height: 100%;
 }
 
 .centralizadorlegenda {
@@ -73,6 +71,7 @@ main{
 	margin-top: -9rem;
 	font-size: 1rem;
 	color: #000000;
+	text-align: center;
 }
 
 .paragraph2{
@@ -159,7 +158,7 @@ main{
 	min-height: 100%;
 	font-family: 'Noto Sans JP', sans-serif;
 	width: 100%;
-	max-height: : 100%;
+	max-height: 100%;
 
 }
 
@@ -167,8 +166,8 @@ main{
 	position: absolute;
 	min-height: 100%;
 	font-family: 'Noto Sans JP', sans-serif;
-	max-width: 100%;
-	max-height: : 100%;
+	width: 100%;
+	max-height: 100%;
 	margin-bottom: 3rem;
 }
 
@@ -359,7 +358,7 @@ main{
 .play-content{	
 	position:absolute;
 	z-index:5;
-	margin-top:2rem;
+	margin-top:1rem;
 	margin-left: 1rem;
 	font-family:sans-serif;
 }
