@@ -28,7 +28,7 @@ main{
 
 .centralizadortitulo {
 	text-align: center;
-	font-family: 'Noto Sans JP', sans-serif; 
+	font-family: 'Changa One', cursive; 
 	font-size: 1.5rem;
 	text-decoration: none;
 	color: #5189BA;
@@ -111,8 +111,8 @@ main{
 }
 
 .paragraph3{
-	font-family: 'Noto Sans JP', sans-serif;
-	font-size: 2rem;
+	font-family: 'Changa One', cursive;
+	font-size: 1.5rem;
 	text-decoration: none;
 	color: #64B4F9;
 	margin-top: 1rem;
@@ -120,8 +120,8 @@ main{
 }
 
 .paragraph4{
-	font-family: 'Noto Sans JP', sans-serif;
-	font-size: 2rem;
+	font-family: 'Changa One', cursive;
+	font-size: 1.5rem;
 	text-decoration: none;
 	color: #64B4F9;
 	margin-top: 15rem;
@@ -188,7 +188,7 @@ main{
 		display:block;
 		align-items: center;
 		text-align: center;
-		font-family: 'Noto Sans JP', sans-serif; 
+		font-family: 'Changa One', cursive; 
 		font-size: 1.75rem;
 		text-decoration: none;
 		color: white;
@@ -235,7 +235,7 @@ main{
 	}
 
 	.paragraph2{
-		font-family: 'Noto Sans JP', sans-serif;
+		font-family: 'Changa One', cursive;
 		font-size: 1.5rem;
 		color: #5189BA;
 	}
@@ -308,7 +308,8 @@ main{
 
 	.text{
 		font-size: 1rem;
-		color: black
+		color: black;
+		font-family: 'Noto Sans JP', sans-serif;
 	}
 
 	.task input{
