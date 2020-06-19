@@ -8,134 +8,135 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <script src="assets/js/rename.js"></script>
     <meta charset='utf-8'>
     <meta name="viewport" content="width:width-device, initial-scale=1">
   </head>
 
-  <body class="body">
+  <body onload="checkEdits()" class="body">
   	<header class="cabecalho">
-      	<a href="index.html"><img class="logo" src="./assets/img/logo_smartorganizer.jpg" alt="Logo"></a>
-    </header>
+     <a href="index.html"><img class="logo" src="./assets/img/logo_smartorganizer.jpg" alt="Logo"></a>
+   </header>
 
-    <main>
-  		<div class="estatico">
-  			<div class="bloco1">
-  				<img width="50" height="175" class="displayed" src="./assets/img/luiza.jpg" alt="Foto Persona">
-   			<h2 class="centralizadorlegenda">Luiza Marques </h2>
-   			<p class="paragraph">Nosso sistema identificou trânsito carregado na sua rota para o trabalho, por isso te acordamos mais cedo!</p>
-  			</div>
+   <main>
+    <div class="estatico">
+     <div class="bloco1">
+      <img width="50" height="175" class="displayed" src="./assets/img/luiza.jpg" alt="Foto Persona">
+      <h2 class="centralizadorlegenda">Luiza Marques </h2>
+      <p class="paragraph">Nosso sistema identificou trânsito carregado na sua rota para o trabalho, por isso te acordamos mais cedo!</p>
+    </div>
 
-  			<div class="bloco2">
-  				<p class="paragraph2">Rotina</p>
-  				<a href="settings.html"><img width="50" height="100" class="item_escrever" src="./assets/img/item_escrever.png" alt="editar"></a>
-  			</div>
-  		<hr class="linha">
+    <div class="bloco2">
+      <p class="paragraph2">Rotina</p>
+      <a href="settings.html"><img width="50" height="100" class="item_escrever" src="./assets/img/item_escrever.png" alt="editar"></a>
+    </div>
+    <hr class="linha">
 
-  		</div>
+  </div>
 
-        <div class="rotina">
-          <h2 class="centralizadortitulo">Sexta Feira</h2>
-            <label class="task"> 
-              <input type="checkbox">
-              <i class="fas fa-check"></i>
-              <span class="text">6:30: Rotina matinal</span>
-            </label>
+  <div class="rotina">
+    <h2 class="centralizadortitulo">Sexta Feira</h2>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span id="task1">6:30: Rotina Matinal</span>
+    </label>
 
-            <label class="task"> 
-              <input type="checkbox">
-              <i class="fas fa-check"></i>
-              <span class="text">7:30: Meditação</span>
-            </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">7:30: Meditação</span>
+    </label>
 
-            <label class="task"> 
-              <input type="checkbox">
-              <i class="fas fa-check"></i>
-              <span class="text">8:00: Sair para trabalho</span>
-            </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">8:00: Sair para trabalho</span>
+    </label>
 
-            <label class="task"> 
-              <input type="checkbox">
-              <i class="fas fa-check"></i>
-              <span class="text">9:00: Reunião com equipe</span>
-            </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">9:00: Reunião com equipe</span>
+    </label>
 
-            <label class="task"> 
-              <input type="checkbox">
-              <i class="fas fa-check"></i>
-              <span class="text">11:00: Café com colegas</span>
-            </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">11:00: Café com colegas</span>
+    </label>
 
-            <label class="task"> 
-              <input type="checkbox">
-              <i class="fas fa-check"></i>
-              <span class="text">11:30: Trabalho em equipe com João</span>
-            </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">11:30: Trabalho em equipe com João</span>
+    </label>
 
-            <label class="task"> 
-              <input type="checkbox">
-              <i class="fas fa-check"></i>
-              <span class="text">13:30: Horário de Almoço</span>
-            </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">13:30: Horário de Almoço</span>
+    </label>
 
-            <label class="task"> 
-              <input type="checkbox">
-              <i class="fas fa-check"></i>
-              <span class="text">14:30: Iníciar relatório estatísitco</span>
-            </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">14:30: Iníciar relatório estatísitco</span>
+    </label>
 
-            <label class="task"> 
-              <input type="checkbox">
-              <i class="fas fa-check"></i>
-              <span class="text">17:00: Fim do expediente</span>
-            </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">17:00: Fim do expediente</span>
+    </label>
 
-            <label class="task"> 
-              <input type="checkbox">
-              <i class="fas fa-check"></i>
-              <span class="text">17:05: Direcionar-se a academia</span>
-            </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">17:05: Direcionar-se a academia</span>
+    </label>
 
-            <label class="task"> 
-              <input type="checkbox">
-              <i class="fas fa-check"></i>
-              <span class="text">17:45: Início do Treino</span>
-            </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">17:45: Início do Treino</span>
+    </label>
 
-            <label class="task"> 
-              <input type="checkbox">
-              <i class="fas fa-check"></i>
-              <span class="text">19:00: Fim do Treino</span>
-            </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">19:00: Fim do Treino</span>
+    </label>
 
-            <label class="task"> 
-              <input type="checkbox">
-              <i class="fas fa-check"></i>
-              <span class="text">19:30: Jantar e Lazer</span>
-            </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">19:30: Jantar e Lazer</span>
+    </label>
 
-            <label class="task"> 
-              <input type="checkbox">
-              <i class="fas fa-check"></i>
-              <span class="text">22:30: Meditação</span>
-            </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">22:30: Meditação</span>
+    </label>
 
-            <label class="task"> 
-              <input type="checkbox">
-              <i class="fas fa-check"></i>
-              <span class="text">23:00: Dormir</span>
-            </label>
-  		</div>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">23:00: Dormir</span>
+    </label>
+  </div>
 
-  		<div class="bottom">
-  			<a href="index.html"><img width="50" height="50" class="home" src="./assets/img/home.png" alt="Home item"></a>
+  <div class="bottom">
+   <a href="index.html"><img width="50" height="50" class="home" src="./assets/img/home.png" alt="Home item"></a>
 
-  			<a href="relax.html"><img width="50" height="50" class="home" src="./assets/img/relax.png" alt="Relax item"></a>
+   <a href="relax.html"><img width="50" height="50" class="home" src="./assets/img/relax.png" alt="Relax item"></a>
 
-  			<a href="gamefication.html"><img width="50" height="50" class="home" src="./assets/img/challenges.png" alt="Challenges item"></a>
+   <a href="gamefication.html"><img width="50" height="50" class="home" src="./assets/img/challenges.png" alt="Challenges item"></a>
 
-  			<a href="settings.html"><img width="50" height="50" class="home" src="./assets/img/conf.png" alt="Conf item"></a>
-  		</div>
+   <a href="settings.html"><img width="50" height="50" class="home" src="./assets/img/conf.png" alt="Conf item"></a>
+ </div>
 
-  </main>
-  </body>
-  </html>
+</main>
+</body>
+</html>

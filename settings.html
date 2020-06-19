@@ -1,220 +1,216 @@
  <!DOCTYPE html>
-  <html lang="pt-br">
+ <html lang="pt-br">
 
-  <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
-    <meta charset='utf-8'>
-    <meta name="viewport" content="width:width-device, initial-scale=1">
+ <head>
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <script src="assets/js/rename.js"></script>
+  <meta charset='utf-8'>
+  <meta name="viewport" content="width:width-device, initial-scale=1">
+</head>
 
-    <script type="text/javascript">
-      function saveEdits(){
-        var editElem = document.getElementById('edit');
-        var userVersion = editElem.innerHTML;
-        localStorage.userEdits = userVersion;
-        document.getElementById("update").innerHTML="Edits Saved!";
-      }
+<body onload="checkEdits()" class="body">
+  <header class="cabecalho">
+    <a href="index.html"><img class="logo" src="./assets/img/logo_smartorganizer.jpg" alt="Logo"></a>
+  </header>
 
-      function checkEdits(){
-        if(localStorage.userEdits != null)
-          document.getElementById("edit").innerHTML=localStorage.userEdits;
-      }
+  <main>
+    <div>
+     <h1 class="centralizadortitulo">Edição de rotina</h1> 
+   </div>
 
-    </script>
-  
-  </head>
-  <body class="body">
-    <header class="cabecalho">
-        <a href="index.html"><img class="logo" src="./assets/img/logo_smartorganizer.jpg" alt="Logo"></a>
-    </header>
 
-    <main>
-      <div>
-       <h1 class="centralizadortitulo">Edição de rotina</h1> 
-      </div>
 
-      <div class="rotina_edicao">
-        <label class="task"> 
-          <input type="checkbox">
-          <i class="fas fa-check"></i>
-          <span class="text">
-            <div id="edit" contenteditable="true">
-              6:30: Rotina matinal
-            </div>
-            <div id="update"></div>
-          </span>
-        </label>
+   <div class="rotina_edicao">
 
-        <label class="task"> 
-          <input type="checkbox">
-          <i class="fas fa-check"></i>
-          <span class="text">
-            <div id="edit" contenteditable="true">
-              7:30: Meditação
-            </div>
-            <div id="update"></div>
-          </span>
-        </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <button onclick="saveEdits()">Teste</button>
+      </span>
+    </label>
 
-        <label class="task"> 
-          <input type="checkbox">
-          <i class="fas fa-check"></i>
-          <span class="text">
-            <div id="edit" contenteditable="true">
-              8:00: Sair para trabalho
-            </div>
-            <div id="update"></div>
-          </span>
-        </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <div id="task1" contenteditable="true">
+          6:30: Rotina matinal
+        </div>
+        <div id="update"></div>
+      </span>
+    </label>
 
-        <label class="task"> 
-          <input type="checkbox">
-          <i class="fas fa-check"></i>
-          <span class="text">
-            <div id="edit" contenteditable="true">
-              9:00: Reunião com equipe
-            </div>
-            <div id="update"></div>
-          </span>
-        </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <div id="edit2" contenteditable="true">
+          7:30: Meditação
+        </div>
+        <div id="update"></div>
+      </span>
+    </label>
 
-        <label class="task"> 
-          <input type="checkbox">
-          <i class="fas fa-check"></i>
-          <span class="text">
-            <div id="edit" contenteditable="true">
-              11:00: Café com colegas
-            </div>
-            <div id="update"></div>
-          </span>
-        </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <div id="edit" contenteditable="true">
+          8:00: Sair para trabalho
+        </div>
+        <div id="update"></div>
+      </span>
+    </label>
 
-        <label class="task"> 
-          <input type="checkbox">
-          <i class="fas fa-check"></i>
-          <span class="text">
-            <div id="edit" contenteditable="true">
-              11:30: Trabalho em equipe com João
-            </div>
-            <div id="update"></div>
-          </span>
-        </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <div id="edit" contenteditable="true">
+          9:00: Reunião com equipe
+        </div>
+        <div id="update"></div>
+      </span>
+    </label>
 
-        <label class="task"> 
-          <input type="checkbox">
-          <i class="fas fa-check"></i>
-          <span class="text">
-            <div id="edit" contenteditable="true">
-              13:30: Horário de Almoço
-            </div>
-            <div id="update"></div>
-          </span>
-        </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <div id="edit" contenteditable="true">
+          11:00: Café com colegas
+        </div>
+        <div id="update"></div>
+      </span>
+    </label>
 
-        <label class="task"> 
-          <input type="checkbox">
-          <i class="fas fa-check"></i>
-          <span class="text">
-            <div id="edit" contenteditable="true">
-              14:30: Iníciar relatório estatísitco
-            </div>
-            <div id="update"></div>
-          </span>
-        </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <div id="edit" contenteditable="true">
+          11:30: Trabalho em equipe com João
+        </div>
+        <div id="update"></div>
+      </span>
+    </label>
 
-        <label class="task"> 
-          <input type="checkbox">
-          <i class="fas fa-check"></i>
-          <span class="text">
-            <div id="edit" contenteditable="true">
-              17:00: Fim do expediente
-            </div>
-            <div id="update"></div>
-          </span>
-        </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <div id="edit" contenteditable="true">
+          13:30: Horário de Almoço
+        </div>
+        <div id="update"></div>
+      </span>
+    </label>
 
-        <label class="task"> 
-          <input type="checkbox">
-          <i class="fas fa-check"></i>
-          <span class="text">
-            <div id="edit" contenteditable="true">
-              17:05: Direcionar-se a academia
-            </div>
-            <div id="update"></div>
-          </span>
-        </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <div id="edit" contenteditable="true">
+          14:30: Iníciar relatório estatísitco
+        </div>
+        <div id="update"></div>
+      </span>
+    </label>
 
-        <label class="task"> 
-          <input type="checkbox">
-          <i class="fas fa-check"></i>
-          <span class="text">
-            <div id="edit" contenteditable="true">
-              17:45: Início do Treino
-            </div>
-            <div id="update"></div>
-          </span>
-        </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <div id="edit" contenteditable="true">
+          17:00: Fim do expediente
+        </div>
+        <div id="update"></div>
+      </span>
+    </label>
 
-        <label class="task"> 
-          <input type="checkbox">
-          <i class="fas fa-check"></i>
-          <span class="text">
-            <div id="edit" contenteditable="true">
-              19:00: Fim do Treino
-            </div>
-            <div id="update"></div>
-          </span>
-        </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <div id="edit" contenteditable="true">
+          17:05: Direcionar-se a academia
+        </div>
+        <div id="update"></div>
+      </span>
+    </label>
 
-        <label class="task"> 
-          <input type="checkbox">
-          <i class="fas fa-check"></i>
-          <span class="text">
-            <div id="edit" contenteditable="true">
-              19:30: Jantar e Lazer
-            </div>
-            <div id="update"></div>
-          </span>
-        </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <div id="edit" contenteditable="true">
+          17:45: Início do Treino
+        </div>
+        <div id="update"></div>
+      </span>
+    </label>
 
-        <label class="task"> 
-          <input type="checkbox">
-          <i class="fas fa-check"></i>
-          <span class="text">
-            <div id="edit" contenteditable="true">
-              22:30: Meditação
-            </div>
-            <div id="update"></div>
-          </span>
-        </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <div id="edit" contenteditable="true">
+          19:00: Fim do Treino
+        </div>
+        <div id="update"></div>
+      </span>
+    </label>
 
-        <label class="task"> 
-          <input type="checkbox">
-          <i class="fas fa-check"></i>
-          <span class="text">
-            <div id="edit" contenteditable="true">
-              23:00: Dormir
-            </div>
-            <div id="update"></div>
-          </span>
-        </label>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <div id="edit" contenteditable="true">
+          19:30: Jantar e Lazer
+        </div>
+        <div id="update"></div>
+      </span>
+    </label>
 
-      <div class="bottom">
-        <a href="index.html"><img width="50" height="50" class="home" src="./assets/img/home.png" alt="Home item"></a>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <div id="edit" contenteditable="true">
+          22:30: Meditação
+        </div>
+        <div id="update"></div>
+      </span>
+    </label>
 
-        <a href="relax.html"><img width="50" height="50" class="home" src="./assets/img/relax.png" alt="Relax item"></a>
+    <label class="task"> 
+      <input type="checkbox">
+      <i class="fas fa-check"></i>
+      <span class="text">
+        <div id="edit" contenteditable="true">
+          23:00: Dormir
+        </div>
+        <div id="update"></div>
+      </span>
+    </label>
 
-        <a href="gamefication.html"><img width="50" height="50" class="home" src="./assets/img/challenges.png" alt="Challenges item"></a>
+    <div class="bottom">
+      <a href="index.html"><img width="50" height="50" class="home" src="./assets/img/home.png" alt="Home item"></a>
 
-        <a href="settings.html"><img width="50" height="50" class="home" src="./assets/img/conf.png" alt="Conf item"></a>
-      </div>
-      
-      <input type="button" value="save my edits" onclick="saveEdits()"/>
+      <a href="relax.html"><img width="50" height="50" class="home" src="./assets/img/relax.png" alt="Relax item"></a>
+
+      <a href="gamefication.html"><img width="50" height="50" class="home" src="./assets/img/challenges.png" alt="Challenges item"></a>
+
+      <a href="settings.html"><img width="50" height="50" class="home" src="./assets/img/conf.png" alt="Conf item"></a>
+    </div>
+
 
   </main>
-  </body>
-  </html>
+</body>
+</html>
