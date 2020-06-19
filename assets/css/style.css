@@ -35,7 +35,7 @@ main{
 	font-weight: bold;
 	margin-top: -3rem;
 	max-width: 100%;
-    max-height: : 100%;
+	max-height: : 100%;
 }
 
 .centralizadorlegenda {
@@ -165,53 +165,53 @@ main{
 }
 
 @media (max-width: 375px) {
-    .cabecalho{
-        font-size: 0.3rem;
+	.cabecalho{
+		font-size: 0.3rem;
 		justify-content: space-between;
 		z-index: 1;
 
-    }
+	}
 
-    .logo{
-    	float: center;
-    	max-width: 100%;
-    	max-height: : 100%;   }
+	.logo{
+		float: center;
+		max-width: 100%;
+		max-height: : 100%;   }
 
-    .displayed{
-    	margin-top: 1rem;
-    	margin-left: 1rem;
-    	width: 8rem;
-    	height: 8rem;
-    }
+	.displayed{
+		margin-top: 1rem;
+		margin-left: 1rem;
+		width: 8rem;
+		height: 8rem;
+	}
 
-    .titulo-mobile{
-    	display:block;
-    	align-items: center;
-    	text-align: center;
+	.titulo-mobile{
+		display:block;
+		align-items: center;
+		text-align: center;
 		font-family: 'Noto Sans JP', sans-serif; 
 		font-size: 1.75rem;
 		text-decoration: none;
 		color: white;
 		font-weight: bold;
 		padding:5%;
-    }
+	}
 
-    .blocktext2{
-    	display: flex;
+	.blocktext2{
+		display: flex;
 		flex-direction: column;
 		text-align: center;
 		margin: 0rem;
 		justify-content: space-between;
 		background-color: gold;
 
-    }
+	}
 
-    .title{
-    	display: flex;
-    	font-size: 1.5rem;
-    	padding-top: 1rem;
-    	text-align: left;
-    }
+	.title{
+		display: flex;
+		font-size: 1.5rem;
+		padding-top: 1rem;
+		text-align: left;
+	}
 
 	.centralizadorlegenda{
 		margin-left: -12.5rem;
@@ -282,12 +282,22 @@ main{
 		min-height: 100%;
 		font-family: 'Noto Sans JP', sans-serif;
 		max-width: 100%;
-    	max-height: : 100%;
+		max-height: : 100%;
 	}
 
 	.rotina_edicao{
-		justify-content: space-around;
+		position: absolute;
+		min-height: 100%;
 		font-family: 'Noto Sans JP', sans-serif;
+		max-width: 100%;
+		max-height: : 100%;
+		margin-bottom: 3rem;
+	}
+
+	.botao{
+		display: flex;
+		justify-content: center;
+
 	}
 
 	.task{
@@ -319,7 +329,7 @@ main{
 
 	.task input:checked ~ i{
 		color: #FA8BB5;
-		
+
 	} 
 	.task input:checked ~ .text{
 		color: #FA8BB5;	
@@ -328,118 +338,118 @@ main{
 	/*músic Player*/ 
 
 	.mainbox{
-	top:19rem;
-	height:5.7rem;
-	width:18.2rem;
-	background-color: white;
-	position:absolute;
-	z-index:10;
-	left:2.5rem;
-	box-shadow:0 0.7rem 0.84rem rgba(0, 0, 0, 0.3);
-	border-radius:1.4rem;
+		top:19rem;
+		height:5.7rem;
+		width:18.2rem;
+		background-color: white;
+		position:absolute;
+		z-index:10;
+		left:2.5rem;
+		box-shadow:0 0.7rem 0.84rem rgba(0, 0, 0, 0.3);
+		border-radius:1.4rem;
 	}
 
 	.roundbox{
-	position:absolute;
-	z-index:15;
-	left:1.3rem;
-	height:5.95rem;
-	width:5.95rem;
-	background-color:#FC9;
-	border-radius:15.75rem;
-	top:-2.1rem;
-	box-shadow:0 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+		position:absolute;
+		z-index:15;
+		left:1.3rem;
+		height:5.95rem;
+		width:5.95rem;
+		background-color:#FC9;
+		border-radius:15.75rem;
+		top:-2.1rem;
+		box-shadow:0 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
 	}
 	.roundbox img{
-	width:5.95rem;
-	height:5.95rem;
-	border-radius:4rem;
-	-webkit-animation:r1 6s linear infinite;
-	animation:r1 6s linear infinite; 
+		width:5.95rem;
+		height:5.95rem;
+		border-radius:4rem;
+		-webkit-animation:r1 6s linear infinite;
+		animation:r1 6s linear infinite; 
 	}
 	@keyframes r1{
-	0%{transform:rotate(-360deg)};
-	10%{transform:rotate(0deg)};
+		0%{transform:rotate(-360deg)};
+		10%{transform:rotate(0deg)};
 	}
 
 	/*small hole at image box*/
 	.smallbox{
-	position:absolute;
-	z-index:17;
-	left:35px;
-	top:35px;
-	height:24.5px;
-	width:24.5px;
-	background-color:#fff4f4;
-	border-radius:252px;
+		position:absolute;
+		z-index:17;
+		left:35px;
+		top:35px;
+		height:24.5px;
+		width:24.5px;
+		background-color:#fff4f4;
+		border-radius:252px;
 	}
 
 	.button{
-	height:49px;
-	width:154px;
-	position:absolute;
-	z-index:17;
-	top:45.5px;
-	left:130px;
+		height:49px;
+		width:154px;
+		position:absolute;
+		z-index:17;
+		top:45.5px;
+		left:130px;
 	}
 
 	#playButton{
-	background-image:url(icon/icons8-play-50.png);
-	background-repeat:no-repeat;
-	background-position:center;
-	height:50px;
-	width:50px;
-	border-radius:10.5px;
-	cursor:pointer;
-	border:none;
+		background-image:url(icon/icons8-play-50.png);
+		background-repeat:no-repeat;
+		background-position:center;
+		height:50px;
+		width:50px;
+		border-radius:10.5px;
+		cursor:pointer;
+		border:none;
 	}
 	#playButton:active{
-	position:relative;
-	top:1.4px;
+		position:relative;
+		top:1.4px;
 	}
 	.#playButton:hover{
-	background-color:#CCC;
+		background-color:#CCC;
 	}
 
 	#muteButton{
-	background-image:url(icon/icons8-voice-filled-15.png);
-	background-repeat:no-repeat;
-	background-position:center;
-	height:21px;
-	width:21px;
-	border-radius:3.5px;
-	cursor:pointer;
-	border:none;
-	background-color:#fff;
-	margin-top:63px;
-	margin-left:10.5px;
+		background-image:url(icon/icons8-voice-filled-15.png);
+		background-repeat:no-repeat;
+		background-position:center;
+		height:21px;
+		width:21px;
+		border-radius:3.5px;
+		cursor:pointer;
+		border:none;
+		background-color:#fff;
+		margin-top:63px;
+		margin-left:10.5px;
 	}
 
 	/*backward playbar-box-css*/
 	.play-content{	
-	position:absolute;
-	z-index:5;
-	margin-top:2rem;
-	margin-left: 1rem;
-	font-family:sans-serif;
+		position:absolute;
+		z-index:5;
+		margin-top:2rem;
+		margin-left: 1rem;
+		font-family:sans-serif;
 	}
 
 	.text1{
-	font-weight:bold;
-	font-size:1rem;
-	text-align: center;
+		font-weight:bold;
+		font-size:1rem;
+		text-align: center;
 
 	}
 	.text2{
-	font-size:0.9rem;
-	text-align: center;
+		font-size:0.9rem;
+		text-align: center;
 	}
 
 	#progressBar{
-	height:3px;
-	width:0px;
-	border-radius:2px;
-	background:#F96;
+		height:3px;
+		width:0px;
+		border-radius:2px;
+		background:#F96;
 	}	
 
 	.grafico{
@@ -486,4 +496,4 @@ main{
 		font-size: 1.5rem;
 		color: #5189BA;
 		padding-bottom: 5%;
-}
+	}
